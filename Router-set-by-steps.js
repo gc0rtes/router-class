@@ -18,11 +18,11 @@ const app = express();
 //6. Register the router as middleware
 app.use(router);
 
-//7. Tell the server to listen on port 4000.
+//7. Define port. Ex: 4000.
 const port = 4000;
 
 //8. Exports a class called Router
 module.exports = router;
 
-//9. Log the port were the server is listening
+//9. Tell the server to listen on the defined port. And console log were the server is listening
 app.listen(port, () => console.log(`Server listening on port ${port}!`));
